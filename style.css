@@ -1,0 +1,129 @@
+body {
+  font-family: arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+}
+
+a:visited {
+  color: #609;
+}
+
+.logo {
+  height: 233px;
+  margin-top: 89px;
+  padding-top: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+img {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  height: 184px;
+  width: 544px;
+}
+
+.search {
+  width:100%;
+  position: absolute;
+  top: 311px;
+
+}
+.header {
+    right: 0;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+.country {
+  color: rgba(0,0,0,.54);
+  margin-left: 30px;
+  text-align: left;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  font-size: small;
+  color: #666;
+  text-decoration: none;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+}
+
+.company {
+  display: inline-block;
+  float: left;
+  padding-left: 30px;
+}
+
+.policy {
+  float: right;
+  padding-right: 30px;
+
+}
+
+.header-text-link, .header-img-link {
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  align-items: center;
+  float: right;
+}
+
+#apps.header-img-link {
+    opacity: .55;
+    width: 20px;
+    height: 20px;
+    padding:0 2px;
+    margin: 5px;
+    background: url("apps.png") -138px 25px;
+    background-size: 528px 68px;
+}
+
+#notifications.header-img-link {
+  background-color: rgba(0,0,0,.55);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 5px;
+  padding: 0 2px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px
+}
+
+#account.header-img-link {
+    background-image: url("apps.png");
+    -webkit-background-size: 528px 68px;
+    background-size: 528px 68px;
+
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
