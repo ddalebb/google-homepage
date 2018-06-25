@@ -1,4 +1,9 @@
-body {
+ html{
+  height: 100%;
+  margin: 0;
+}
+
+ body {
   font-family: arial, sans-serif;
   height: 100%;
   margin: 0;
@@ -7,12 +12,19 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #666;
+  color: #000:
 }
 
-a:visited {
-  color: #609;
+a:hover {
+  text-decoration: underline;
 }
+a:visited {
+   color: #666;
+ }
+
+ a:link{
+    color: #666;
+  }
 
 .logo {
   height: 233px;
@@ -23,25 +35,137 @@ a:visited {
 }
 
 img {
+  position: relative;
+  top: 100px;
   border-top-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 0px;
   border-left-width: 0px;
-  height: 184px;
-  width: 544px;
+  height: 92px;
+  width: 272px;
 }
 
-.search {
-  width:100%;
-  position: absolute;
-  top: 311px;
 
-}
 .header {
+    position: absolute;
+    top: 30px;
     right: 0;
     width: 100%;
-    margin-top: 40px;
+}
 
+.navbar{
+    float: right;
+    text-align: left;
+    margin-right: 30px;
+}
+
+
+.click{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  text-align: center;
+  margin: auto;
+  line-height: 30px;
+}
+
+#dmail{
+  position: relative;
+  left: -5px;
+}
+
+#apps{
+    position: relative;
+    left: 7px;
+    opacity: .55;
+    color: rgba(0,0,0,0);
+    width: 20px;
+    height: 20px;
+    box-sizing:border-box;
+    font-size: large;
+    background: url("apps.png") -133px 24px;
+    background-size: 528px 68px;
+}
+
+#apps:hover{
+  opacity: unset;
+}
+
+#notifications {
+  background-color: #666;
+  opacity: 1;
+  font-size: 20px;
+  color: rgba(0,0,0,0);
+  border-radius: 50%;
+  box-sizing:border-box;
+  height: 30px;
+  width: 30px;
+}
+
+#notifications:hover{
+  background-color: #000;
+}
+
+#bell{
+  position: fixed;
+  margin-top: 4px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  box-sizing:border-box;
+  background: url("apps.png") -454px 87px;
+  background-size: 264px 34px;
+}
+
+#account{
+  background-color: #b247b9;
+    opacity: 1;
+    position: relative;
+    top: 4px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: rgba(0,0,0,0);
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    z-index: -1;
+}
+
+#D {
+  position: fixed;
+  margin-top: 0px;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  box-sizing:border-box;
+  background: url("apps.png") -501px 76px;
+  background-size: 385px 51px;
+  z-index: 0;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 300px;
+}
+
+.searchbar{
+  width: 50%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons{
+  display: inline-block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .country {
@@ -56,74 +180,19 @@ img {
   position: absolute;
   width: 100%;
   font-size: small;
-  color: #666;
   text-decoration: none;
   background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
   line-height: 40px;
 }
 
-.company {
+
+#company {
   display: inline-block;
   float: left;
-  padding-left: 30px;
 }
 
-.policy {
+#policy {
   float: right;
-  padding-right: 30px;
-
-}
-
-.header-text-link, .header-img-link {
-  font-size: 13px;
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  align-items: center;
-  float: right;
-}
-
-#apps.header-img-link {
-    opacity: .55;
-    width: 20px;
-    height: 20px;
-    padding:0 2px;
-    margin: 5px;
-    background: url("apps.png") -138px 25px;
-    background-size: 528px 68px;
-}
-
-#notifications.header-img-link {
-  background-color: rgba(0,0,0,.55);
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  margin: 5px;
-  padding: 0 2px;
-  text-align: center;
-  box-sizing: border-box;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px
-}
-
-#account.header-img-link {
-    background-image: url("apps.png");
-    -webkit-background-size: 528px 68px;
-    background-size: 528px 68px;
-
-    display: inline-block;
-    outline: none;
-    vertical-align: middle;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 30px;
-    width: 30px;
-    color: #000;
-    cursor: pointer;
-    text-decoration: none;
+  margin-right: 30px;
 }
